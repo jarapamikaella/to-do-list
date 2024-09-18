@@ -6,10 +6,15 @@ const todoList = [
 const checkboxList = document.getElementById('item-list')
 
 function addToDo() {
-    alert('To Do Added')
+    const newItem = document.getElementById('todo-input-field').value.trim();
+    todoList.push(newItem)
+    createTodoItem(newItem)
+    document.getElementById('todo-input-field').value = ""
 }
 
-todoList.map(item => {
+todoList.forEach(createTodoItem)
+
+function createTodoItem(item) {
     const itemContainer = document.createElement('div');
     // Create a checkbox input element
     const checkbox = document.createElement('input');
@@ -27,4 +32,4 @@ todoList.map(item => {
     
     // Append the container div to the checkbox list div
     checkboxList.appendChild(itemContainer);
-})
+}

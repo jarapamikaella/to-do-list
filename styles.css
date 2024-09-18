@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    width: 100%;
+}
+
+.todo-list-container {
+    display: flex;
+}

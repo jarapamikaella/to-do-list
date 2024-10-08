@@ -16,3 +16,13 @@ h1 {
     display: inline;
     justify-content: baseline;
 }
+
+ul li {
+    list-style-type: none;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    color: black;
+    text-decoration: line-through;
+}
